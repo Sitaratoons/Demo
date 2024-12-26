@@ -116,12 +116,13 @@ async def start_command(client: Client, message: Message):
         return
     else:
         reply_markup = InlineKeyboardMarkup(
-            [
+            [[
+                    InlineKeyboardButton('⚡️ ᴀɴɪᴍᴇ', url='https://t.me/Anime_Backup_ST'),
+                    InlineKeyboardButton('🍁 ᴍᴏᴠɪᴇs', url='https://t.me/+SrRuLfKjAY0xZDU1')
+                ],
                 [
-                    InlineKeyboardButton("😊 About Me", callback_data = "about"),
-                    InlineKeyboardButton("🔒 Close", callback_data = "close")
-                ]
-            ]
+                    InlineKeyboardButton('🔞. ᴊᴀᴘᴀɴᴇꜱᴇ  .🚀', url='https://t.me/+jD4qzJeB6E0zMjBl')
+                ]]
         )
         if START_PIC:  # Check if START_PIC has a value
             await message.reply_photo(
